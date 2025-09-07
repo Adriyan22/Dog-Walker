@@ -1,0 +1,22 @@
+section#secao-servicos {
+    margin: 70px 0 ;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+div.box-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.titulo-servicos {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #2E8B57;
+    font-size: 2.3em;
+}

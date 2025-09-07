@@ -1,0 +1,120 @@
+section#secao-inicio {
+    margin-top: 10vh;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #87CEEB 0%, #98FB98 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+div.conteudo-inicio {
+    max-width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.conteudo-inicio > h2 {
+    color: #2E8B57;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.conteudo-inicio > p {
+    color: #555555;
+}
+
+div.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+a.agendamento, a.opcoes-servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 50px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a.agendamento:hover, a.opcoes-servicos:hover {
+    transform: translateY(-2px);
+    transition: 0.3s ease-in-out;
+    color: #FFFFFF;
+}
+
+a.agendamento {
+    box-shadow: 0px 0px 5px #FF7F3D;
+    background-color: #FF7F3D;
+    color: #FFFFFF;
+}
+
+a.opcoes-servicos {
+    color: #2E8B57;
+    border: 2px solid #2E8B57;
+}
+
+a.opcoes-servicos:hover {
+    background-color: #2E8B57;
+}
+
+picture.cao-feliz {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+picture.cao-feliz > img {
+    border-radius: 20px;
+    width: 90%;
+}
+
+@media (min-width:768px) {
+    section#secao-inicio {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+
+    .conteudo-inicio {
+        font-size: 16px;
+    }
+
+    .conteudo-inicio > h2 {
+        font-size: 3em;
+    }
+
+    .conteudo-inicio > p {
+        line-height: 30px;
+    }
+
+    a.agendamento, a.opcoes-servicos {
+        width: 150px;
+        height: 50px;
+        text-decoration: none;
+    }
+
+    picture.cao-feliz {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    picture.cao-feliz > img {
+        box-shadow: 0px 0px 15px #ffffff67;
+    }
+
+}
+

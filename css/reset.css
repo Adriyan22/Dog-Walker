@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+h1, h2, h5, .fa-check {
+    color: #2E8B57;
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+i, strong.valor {
+    color: #FD7D00;
+}
+
+p, li, a, input, textarea, select {
+    color: #595955;
+}
+
+.barra-1, .barra-2, .barra-3 {
+    background-color: #FF6B35;
+}
+
+@media (min-width: 768px) {
+    p, input, select, textarea, li {
+        font-size: 1.2rem;
+    }
+}

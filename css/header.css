@@ -1,0 +1,136 @@
+header#header {
+    height: 10vh;
+    width: 100vw;
+    background-color: #F9FDFD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.logo-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    transform: rotate(-7deg);
+}
+
+h1 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.menu-lista {
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+li > a.secao {
+    text-decoration: none;
+
+}
+
+li > a.secao:hover {
+     color: #2E8B57;
+}
+
+li > .secao::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+li > a.secao:hover::after {
+    width: 100%;
+    background-color: #FF6B35;
+}
+
+
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    border-color: transparent;
+    z-index: 999;
+}
+
+span {
+    display: block;
+    height: 3px;
+    width: 35px;
+    background-color: #333333;
+    margin: 5px auto;
+    transition: 0.2s ease-in-out;
+}
+
+
+.barra-1 {
+    transform-origin: center;
+    transform: rotate(45deg) translate(4px, 7px);
+}
+
+.barra-2 {
+    visibility: hidden;
+}
+
+.barra-3 {
+    transform-origin: center;
+    transform: rotate(-45deg) translate(4px, -7px);
+}
+
+.sombra {
+    box-shadow: 0px 0px 5px #ff6b35;
+    transition: 0.2s ease-in-out;
+} 
+
+@media (max-width: 768px) {
+    .menu-lista {
+        display: none;
+    }
+
+
+    .menu-lista.menu-show {
+        background-color: #dae9e9;
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 50vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        animation: menu-circle 0.2s ease-in-out;
+    }
+}
+
+@media (min-width: 768px){
+    button[type="button"] {
+        display: none;
+    }
+
+}
+
+@keyframes menu-circle {
+    0%{
+        clip-path: circle(0% at top right);
+    }100%{
+         clip-path: circle(150% at top right);
+    }   
+}
