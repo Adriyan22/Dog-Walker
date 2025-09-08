@@ -92,10 +92,8 @@ select option {
 }
 
 textarea {
-    text-indent: 5px;
     border-radius: 10px;
     width: 80%;
-    resize: vertical;
     height: 100px;
 }
 

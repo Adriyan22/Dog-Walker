@@ -18,13 +18,43 @@ function estadoInput (event) {
         input.style.transition = "0.2s ease-in-out";
     }
 }
+
 const elements = [nomeDoUsuario, telefoneDoUsuario, descricaoDoCachorro];
 elements.forEach(e => {
     e.addEventListener("blur", estadoInput)
 })
 
-
 formularioAgendamento.addEventListener("submit", event => {
     event.preventDefault()
+
+    const numero = "5524998749911"
+    let nomeCliente = nomeDoUsuario.value
+    let telefoneCliente = telefoneDoUsuario.value
+    let porteDoCao = seletorDeOpcoes.value
+    
+    const mensagemCliente = `Olá Adriano gostaria de fazer um passeio experimental.\nDados do cliente:\nNome: ${nomeCliente}\nTelefone: ${telefoneCliente}\nPorte do cão: ${porteDoCao}\nMensagem: ${descricaoDoCachorro.value}`
+
+    const mensagemFormatoUrl = encodeURIComponent(mensagemCliente)
+
+    const mensagemFormatoUrlWhatsApp = `https://wa.me/${numero}?text=${mensagemFormatoUrl}`
+
+    window.open(mensagemFormatoUrlWhatsApp, '_blank')
 })
+
+
+seletorDeOpcoes.addEventListener("change", (event) => {
+    const selectOptions = event.target
+    const opcaoSelecionada = selectOptions.value
+    
+    if (opcaoSelecionada) {
+        selectOptions.style.border = "2px solid #0f0";
+        selectOptions.style.transition = "0.2s ease-in-out";
+    }else{
+        input.style.border = "2px solid #f00";
+        input.style.transition = "0.2s ease-in-out";
+    }
+})
+
+
+
 

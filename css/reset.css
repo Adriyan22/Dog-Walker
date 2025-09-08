@@ -32,7 +32,7 @@ p, li, a, input, textarea, select {
 }
 
 @media (min-width: 768px) {
-    p, input, select, textarea, li {
+    p, input, select, li, textarea {
         font-size: 1.2rem;
     }
 }
