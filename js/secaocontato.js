@@ -7,7 +7,7 @@ const descricaoDoCachorro = document.querySelector("textarea");
 const botaoDeSubmissaoDoFormulario = document.querySelector('input[type=button]');
 
 
-//FUNÇÃO QUE VERIFICA O ESTADO DO INPUT
+
 function estadoInput (event) {
     const input = event.target
     if(input.value.trim() !== ""){
@@ -31,8 +31,13 @@ formularioAgendamento.addEventListener("submit", event => {
     let nomeCliente = nomeDoUsuario.value
     let telefoneCliente = telefoneDoUsuario.value
     let porteDoCao = seletorDeOpcoes.value
-    
-    const mensagemCliente = `Olá Adriano gostaria de fazer um passeio experimental.\nDados do cliente:\nNome: ${nomeCliente}\nTelefone: ${telefoneCliente}\nPorte do cão: ${porteDoCao}\nMensagem: ${descricaoDoCachorro.value}`
+
+    const mensagemCliente = `Olá Adriano gostaria de fazer um passeio experimental.
+    Dados do cliente:
+    Nome: ${nomeCliente}
+    Telefone: ${telefoneCliente}
+    Porte do cão: ${porteDoCao}
+    Mensagem: ${descricaoDoCachorro.value}`
 
     const mensagemFormatoUrl = encodeURIComponent(mensagemCliente)
 
@@ -55,6 +60,5 @@ seletorDeOpcoes.addEventListener("change", (event) => {
     }
 })
 
-
-
-
+ 
+ 
