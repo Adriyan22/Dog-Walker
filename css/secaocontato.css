@@ -45,10 +45,6 @@ nav.nav-contato ul.redes-sociais-contato li.contato a.a-contato{
    transition: 0.2s ease-in-out;
 }
 
-nav.nav-contato ul.redes-sociais-contato li.contato > a.a-contato:hover {
-    border-color: #FF6B35 ;
-    color: #2E8B57;
-}
 
 
 nav.nav-contato ul.redes-sociais-contato li.contato  a.a-contato > i {
@@ -128,6 +124,11 @@ input[type="submit"] {
     }
     input[type="submit"]:hover {
         box-shadow: 0px 0px 10px #ff6b357e;
+    }
+    
+    nav.nav-contato ul.redes-sociais-contato li.contato > a.a-contato:hover {
+        border-color: #FF6B35 ;
+        color: #2E8B57;
     }
 }
 
