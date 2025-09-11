@@ -44,11 +44,6 @@ a.agendamento, a.opcoes-servicos {
     text-decoration: none;
 }
 
-a.agendamento:hover, a.opcoes-servicos:hover {
-    transform: translateY(-2px);
-    transition: 0.3s ease-in-out;
-    color: #FFFFFF;
-}
 
 a.agendamento {
     box-shadow: 0px 0px 5px #FF7F3D;
@@ -61,9 +56,6 @@ a.opcoes-servicos {
     border: 2px solid #2E8B57;
 }
 
-a.opcoes-servicos:hover {
-    background-color: #2E8B57;
-}
 
 picture.cao-feliz {
     max-width: 90%;
@@ -102,6 +94,16 @@ picture.cao-feliz > img {
         width: 150px;
         height: 50px;
         text-decoration: none;
+    }
+    
+    a.opcoes-servicos:hover {
+        background-color: #2E8B57;
+    }
+    
+    a.agendamento:hover, a.opcoes-servicos:hover {
+        transform: translateY(-2px);
+        transition: 0.3s ease-in-out;
+        color: #FFFFFF;
     }
 
     picture.cao-feliz {
