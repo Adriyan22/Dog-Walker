@@ -27,10 +27,6 @@ div.card {
     transition: 0.2s ease-in-out;
 }
 
-div.card:hover, .pequeno:hover, .medio:hover, .grande:hover {
-    transform: translateY(-2px) scale(1.01);
-    border-color: #FF7F3D;
-}
 
 
 div.card > img.compromisso , .amor {
@@ -77,5 +73,10 @@ div.card-text {
 
     div.card {
         width: 70%;
+    }
+    
+    div.card:hover, .pequeno:hover, .medio:hover, .grande:hover {
+        transform: translateY(-2px) scale(1.01);
+        border-color: #FF7F3D;
     }
 }
