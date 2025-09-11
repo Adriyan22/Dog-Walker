@@ -45,7 +45,8 @@ nav.nav-contato ul.redes-sociais-contato li.contato a.a-contato{
    transition: 0.2s ease-in-out;
 }
 
-
+nav.nav-contato ul.redes-sociais-contato li.contato a.a-contato:visited{color: #595C5A;}
+nav.nav-contato ul.redes-sociais-contato li.contato a.a-contato:active{color: #595C5A;}
 
 nav.nav-contato ul.redes-sociais-contato li.contato  a.a-contato > i {
     font-size: 1.5rem;
