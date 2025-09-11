@@ -30,9 +30,6 @@ ul.footer-social-media-lista li a i {
     transition: 0.2s ease-in-out;
 }
 
-ul.footer-social-media-lista li a i:hover {
-    color: #FD7D00;
-}
 div.footer-subtitulo h3 {
     font-weight: 700;
 }
@@ -43,6 +40,10 @@ footer p, h3 {
 
 @media (min-width: 768px) {
     ul.footer-social-media-lista li a i {
-        font-size: 1.8rem;
+        font-size: 2rem;
+    }
+
+    ul.footer-social-media-lista li a i:hover {
+        color: #FD7D00;
     }
 }
