@@ -59,6 +59,9 @@ seletorDeOpcoes.addEventListener("change", (event) => {
         input.style.transition = "0.2s ease-in-out";
     }
 })
-
+window.addEventListener("load", () => {
+    const inputs = document.querySelectorAll("input")
+    inputs.forEach(emptyInput => emptyInput.value = "")
+})
  
  
