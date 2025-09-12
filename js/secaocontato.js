@@ -60,7 +60,7 @@ seletorDeOpcoes.addEventListener("change", (event) => {
     }
 })
 window.addEventListener("load", () => {
-    const inputs = document.querySelectorAll("input")
+    const inputs = document.querySelectorAll('input[type=text], input[type=tel], textarea')
     inputs.forEach(emptyInput => emptyInput.value = "")
 })
  
